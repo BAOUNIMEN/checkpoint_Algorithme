@@ -20,4 +20,7 @@ BEGIN
         nbr_v:= nbr_v + 1;
      END_IF
     END_FOR
-END
+    write ("number of characters is :" nbr_c);
+    write("vowel number is:" nbr_v);
+    write("sentence number is :" nbr_w);
+    End 
