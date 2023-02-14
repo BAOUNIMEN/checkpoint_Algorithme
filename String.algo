@@ -1,0 +1,23 @@
+ALGORITHM STRING
+VAR
+    i, nbr_c, nbr_w, nbr_v = INTEGER;
+    Str= STRING;
+    nbr_c:=0;
+    nbr_v:=0;
+    nbr_w:=0;
+
+BEGIN
+    write("the string,"str" is:");
+    read (str);
+    FOR i FROM str[i]=0 TO str.length()-1 STEP step  DO
+     IF (str[i]="") or (str[i]=".") THEN
+      nbr_w:=nbr_w + 1;
+      ELSE 
+      nbr_c:= nbr_c + 1;
+     END_IF
+     IF (str[i]="a")or (str[i]="e") or (str[i]="i") or (str[i]="o") or (str[i]="u") THEN
+
+        nbr_v:= nbr_v + 1;
+     END_IF
+    END_FOR
+END
